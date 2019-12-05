@@ -1,4 +1,6 @@
 h1 {
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
     color: green;
     text-align: center;
 }
@@ -8,7 +10,7 @@ ol{
 #id {
     float: right;
 }
-img{
+.img1{
     float: left;
     width: 300px;
     height: 200px;
@@ -19,4 +21,12 @@ body{
 .contenu{
     width:780px; 
     margin:auto;
+}
+.img2{
+    float: right;
+    width: 350px;
+    height: 200px;
+}
+.carte{
+    text-align: right;
 }
