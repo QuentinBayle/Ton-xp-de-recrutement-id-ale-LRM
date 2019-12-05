@@ -5,3 +5,18 @@ h1 {
 ol{
     list-style-type: disc;
 }
+#id {
+    float: right;
+}
+img{
+    float: left;
+    width: 300px;
+    height: 200px;
+}
+body{
+    text-align: justify;
+}
+.contenu{
+    width:780px; 
+    margin:auto;
+}
