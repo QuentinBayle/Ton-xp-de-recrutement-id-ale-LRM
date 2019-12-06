@@ -1,0 +1,57 @@
+
+#titre
+{
+    color: black;
+}
+body
+
+{
+    background-image: url("../View/image/fondvert.jpg");
+}
+
+.btn-success div img {
+    
+    width: 200px;
+    height: 150px;
+    -webkit-filter: grayscale(0) blur(0px);
+    filter: grayscale(0) blur(0px);
+    transition: transform 450ms, background-color 300ms;
+  }
+.btn-success:hover{
+    
+    width: 60px; /* on affiche l'image au carré */
+    height: 60px;
+    border-radius: 50%; 
+}
+
+.btn-danger div img {
+    width: 200px;
+    height: 150px;
+    -webkit-filter: grayscale(0) blur(0px);
+    filter: grayscale(0) blur(0px);
+    
+    
+  }
+.btn-danger:hover{
+    width: 60px; /* on affiche l'image au carré */
+    height: 60px;
+    border-radius: 50%; 
+}
+
+.btn-danger{
+    position: relative;
+    left: 20vh;
+    top: 28vh;
+position: relative;
+}
+.image-div {
+    left :70vh;
+    align-content: center;
+position: relative;
+}
+.btn-success{
+    position: relative;
+    right: 20vh;
+    top: 28vh;
+position: relative;
+}
