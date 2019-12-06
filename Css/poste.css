@@ -21,12 +21,7 @@
     filter: grayscale(0) blur(0px);
     
   }
-.btn-success:hover{
-    position:  relative;
-    left: 60px; /* on affiche l'image au carré */
-    height: 60px;
-    border-radius: 50%; 
-}
+
 
 .btn-danger div img {
     position: relative;
@@ -38,18 +33,19 @@
     
   }
 .btn-danger:hover{
+    z-index: 8;
     position: relative;
-    left: 60px; /* on affiche l'image au carré */
-    height: 60px;
+    left: 95vh;
+    top: 68.5vh;
     border-radius: 50%; 
 }
 
+
 .btn-danger{
-    z-index: 2;
+    z-index: 8;
     position: relative;
-    left: 99vh;
-    top: 28vh;
-position: relative;
+    left: 95vh;
+    top: 68.5vh;
 }
 .image-div {
     position: relative;
@@ -57,12 +53,21 @@ position: relative;
 
 }
 .btn-success{
-    z-index: 2;
+    z-index: 8;
     position: relative;
-    left: 53vh;
-    top: 28vh;
-position: relative;
+    left: 100vh;
+    top: 68.5vh;
 }
+
+
+.btn-success:hover{
+    z-index: 8;
+    position: relative;
+    left: 100vh;
+    top: 68.5vh;
+    border-radius: 50%; 
+}
+
 
 #tind{
     position: relative;
@@ -81,3 +86,6 @@ position: relative;
     top: 6px;
     padding-bottom: 5px;
 }
+
+#gallery { position: relative; }
+#pictures img { position: absolute; top: -15px; left: 75vh; }

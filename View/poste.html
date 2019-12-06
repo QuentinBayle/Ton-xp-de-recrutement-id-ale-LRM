@@ -26,11 +26,66 @@
 <div id="corp">
     <h1 id="titre">POSTE DU ROI MERLIN</h1>
     Voici un tinderposte à ta disposition :<br />
-    <div class = "image-div">
-        <button  type="button" class="btn btn-danger">non</button>
-        <img id ="tind" src="image/MerlinMeet.png" alt="tinderposte" />
-        <button  type="button" class="btn btn-success">OUI</button>
-</div>
+
+
+<div class="image-div" id="gallery">
+        <div id="pictures">
+            <img id ="tind" src="image/MerlinMeetBigD.png" alt="tinderposte" />
+            <img src="image/MerlinMeetCloud.png" alt="" />
+            <img src="image/MerlinMeetManager.png" alt="" />
+            <img src="image/MerlinMeetTech.png" alt="" />
+            <img src="image/MerlinMeetpRrojet.png" alt="" />
+            
+
+        </div>
+        <a href="#next"><button id="next" type="button" class="btn btn-danger">non</a></button>
+        <a href="postuler.html"><button  type="button" class="btn btn-success">oui</a></button>
+    </div>
+
+    <script type="text/javascript">
+
+        $(document).ready(function() { 
+        var z = 0; 
+        var inAnimation = false;
+
+    $('#pictures img').each(function() { 
+        z++;
+        $(this).css('z-index', z);
+    });
+
+    function swapFirstLast(isFirst) {
+        if(inAnimation) return false; 
+        else inAnimation = true; 
+
+        var processZindex, direction, newZindex, inDeCrease; 
+
+        if(isFirst) { processZindex = z; direction = '-'; newZindex = 1; inDeCrease = 1; } 
+        else { processZindex = 1; direction = ''; newZindex = z; inDeCrease = -1; } //attribue les variables dans le cas 'précédent'
+
+      $('#pictures img').each(function() { //actualise chaque image
+        if($(this).css('z-index') == processZindex) { //s'il s'agit de l'image à animer
+          $(this).animate({ 'top' : direction + $(this).height() + 'px' }, 'slow', function() { //anime l'image au-dessus/en-dessous (les images doivent avoir la même hauteur)
+            $(this).css('z-index', newZindex) //attribue le nouveau z-index
+              .animate({ 'top' : '0' }, 'slow', function() { //ramène l'image à sa position initiale
+                inAnimation = false; //modifie le flag pour dire que l'animation est finie
+            });
+        });
+        } else { //ce n'est pas l'image à animer, on modifie juste le z-index
+          $(this).animate({ 'top' : '-20px' }, 'slow', function() { //il faut attendre la fin de l'animation pour modifier le z-index
+            $(this).css('z-index', parseInt($(this).css('z-index')) + inDeCrease); //ajuste le z-index
+            });
+        }
+    });
+
+        return false; 
+    }
+
+    $('#next a').click(function() {
+        return swapFirstLast(true); 
+    });
+    });
+
+    </script>
 
     </body>
 </html>
