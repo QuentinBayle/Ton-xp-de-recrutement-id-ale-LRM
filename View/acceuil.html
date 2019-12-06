@@ -10,6 +10,12 @@
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
+        <!-- Fonts Google-->
+	
+	<link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:700i&display=swap" rel="stylesheet">
+
+    
     </head>
 
     <body>
@@ -17,13 +23,37 @@
 			<div class="row" >
 				<div class ="col" id="navigation">
                     <img src="image/logo-min.png" alt="Header + Logo" id="logo" />
+                    <p id="titre"> Leroy Merlin</p>
                 </div>
             </div>
         </div>
-        <div class="row" id="acordéon">
+        <div class="row"    id="tout" >
+        <div class="col" id="acordéon">
+            <div class="slider">
+                <ul>
+                    <li onmouseover="document.getElementById('tout').style.backgroundImage='url(image/backgroundpresentation.png)'">
+                        <div class="title"><a href="#">Présentation de l'entreprise</a></div>
+                        <img src="image/Presentation.png" /> 
+                    </li>
+                    <li onmouseover="document.getElementById('tout').style.backgroundImage='url(image/backgroundpostes.png)'" >
+                        <div class="title"><a href="#"> Nos Postes</a></div>
+                        <img src="image/postes.png" /> 
+                    </li>
+                    <li onmouseover="document.getElementById('tout').style.backgroundImage='url(image/backgroundpostuler.png)'">
+                        <div class="title"><a href="#">Postuler</a></div>
+                        <img id="postuler" src="image/postuler.png" /> 
+                    
+                    </li>
+                    <li  onmouseover="document.getElementById('tout').style.backgroundImage='url(image/backgroundstage.png)'">
+                            <div class="title"><a href="#">Stage</a></div>
+                            <img src="image/stage.png" /> 
+                        
+                        </li>
+                </ul>
 
-
-
+            </div>
         </div>
+    </div>
+
     </body>
 </html>
