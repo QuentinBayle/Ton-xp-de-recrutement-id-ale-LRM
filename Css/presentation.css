@@ -51,13 +51,18 @@ img
     flex-direction : column;
     width: 20%;
 }
-#colonne1
+.col-2
 {
+    background-image: url("../View/image/fondvert.jpg");
+}
+
+#colonne1{
     margin-top: 150px;
+
 }
 #colonne2
 {
-    background-image: url("../View/image/fondvert.jpg");
+    background-image: url("../View/image/outil.png");
     border-left:5px green ridge;
 }
 
