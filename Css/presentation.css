@@ -127,3 +127,11 @@ li{
         color:red;
         background-color: black;
     }
+a{
+ color: black;
+    }
+.btn-outline-secondary{
+    margin-bottom: 50px;
+    margin-left:20px;
+    
+}
