@@ -14,7 +14,11 @@ ol{
 body{
     text-align: justify;
 }
-.contenu{
+.stage1{
+    width:780px; 
+    margin:auto;
+}
+.stage2{
     width:780px; 
     margin:auto;
 }
@@ -26,7 +30,7 @@ body{
 .img2{
     float: right;
     width: 300px;
-    height: 175px;
+    height: 200px;
 }
 .postuler{
     text-align: right;
@@ -39,3 +43,8 @@ body{
 .accueil{
     float : left;
 }
+html{
+    background-attachment: fixed;
+    background-image: url("../View/image/outil.png");
+}
+
