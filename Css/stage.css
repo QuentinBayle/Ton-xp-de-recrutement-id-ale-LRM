@@ -58,6 +58,11 @@ body{
 }
 html{
     background-attachment: fixed;
-    background-image: url("../View/image/outil.png"); 
+    background-image: url("../View/image/outil.png")    ; 
+
 }
 
+article{
+    font-family: 'Noto Sans', sans-serif;
+
+}

@@ -60,19 +60,19 @@
         var processZindex, direction, newZindex, inDeCrease; 
 
         if(isFirst) { processZindex = z; direction = '-'; newZindex = 1; inDeCrease = 1; } 
-        else { processZindex = 1; direction = ''; newZindex = z; inDeCrease = -1; } //attribue les variables dans le cas 'précédent'
+        else { processZindex = 1; direction = ''; newZindex = z; inDeCrease = -1; } 
 
-      $('#pictures img').each(function() { //actualise chaque image
-        if($(this).css('z-index') == processZindex) { //s'il s'agit de l'image à animer
-          $(this).animate({ 'top' : direction + $(this).height() + 'px' }, 'slow', function() { //anime l'image au-dessus/en-dessous (les images doivent avoir la même hauteur)
-            $(this).css('z-index', newZindex) //attribue le nouveau z-index
-              .animate({ 'top' : '0' }, 'slow', function() { //ramène l'image à sa position initiale
-                inAnimation = false; //modifie le flag pour dire que l'animation est finie
+    $('#pictures img').each(function() { 
+        if($(this).css('z-index') == processZindex) {
+            $(this).animate({ 'top' : direction + $(this).height() + 'px' }, 'slow', function() { 
+            $(this).css('z-index', newZindex) 
+            .animate({ 'top' : '0' }, 'slow', function() { 
+                inAnimation = false; 
             });
         });
-        } else { //ce n'est pas l'image à animer, on modifie juste le z-index
-          $(this).animate({ 'top' : '-20px' }, 'slow', function() { //il faut attendre la fin de l'animation pour modifier le z-index
-            $(this).css('z-index', parseInt($(this).css('z-index')) + inDeCrease); //ajuste le z-index
+        } else { 
+            $(this).animate({ 'top' : '-20px' }, 'slow', function() { 
+            $(this).css('z-index', parseInt($(this).css('z-index')) + inDeCrease);
             });
         }
     });

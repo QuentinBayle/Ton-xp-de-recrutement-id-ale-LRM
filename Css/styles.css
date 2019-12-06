@@ -2,6 +2,8 @@
     box-shadow: 6px 6px 8px #aaa;
     height: 100px;
     display: flex;
+    background-image: url("../View/image/header.png");
+    
 }
 
 #logo{
@@ -104,13 +106,12 @@
     width: 101%;
 }
 
-#titre{
-    margin-top:auto;
-    margin-top:auto;
-    margin-left:70vh;
-    font-size: 35px;
-    color:green;
-    font-family: 'Lora', serif;
 
-
+#giflogo{
+    z-index: 0;
+    position: relative;
+    width: 130px;
+    top: 6px;
+    padding-bottom: 5px;
+    margin:auto;
 }
