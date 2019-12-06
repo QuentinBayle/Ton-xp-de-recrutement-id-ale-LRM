@@ -3,29 +3,34 @@
 {
     color: black;
 }
-body
+#corp
 
 {
     background-image: url("../View/image/fondvert.jpg");
+    background-size: cover;
+    height: 89.5vh;
+
 }
 
 .btn-success div img {
-    
-    width: 200px;
+    position: relative;
+
+    left: 200px;
     height: 150px;
     -webkit-filter: grayscale(0) blur(0px);
     filter: grayscale(0) blur(0px);
-    transition: transform 450ms, background-color 300ms;
+    
   }
 .btn-success:hover{
-    
-    width: 60px; /* on affiche l'image au carré */
+    position:  relative;
+    left: 60px; /* on affiche l'image au carré */
     height: 60px;
     border-radius: 50%; 
 }
 
 .btn-danger div img {
-    width: 200px;
+    position: relative;
+    left: 200px;
     height: 150px;
     -webkit-filter: grayscale(0) blur(0px);
     filter: grayscale(0) blur(0px);
@@ -33,25 +38,46 @@ body
     
   }
 .btn-danger:hover{
-    width: 60px; /* on affiche l'image au carré */
+    position: relative;
+    left: 60px; /* on affiche l'image au carré */
     height: 60px;
     border-radius: 50%; 
 }
 
 .btn-danger{
+    z-index: 2;
     position: relative;
-    left: 20vh;
+    left: 99vh;
     top: 28vh;
 position: relative;
 }
 .image-div {
-    left :70vh;
+    position: relative;
     align-content: center;
-position: relative;
+
 }
 .btn-success{
+    z-index: 2;
     position: relative;
-    right: 20vh;
+    left: 53vh;
     top: 28vh;
 position: relative;
+}
+
+#tind{
+    position: relative;
+    left: 75vh;
+}
+
+#navigation{
+    box-shadow: 6px 6px 8px #aaa;
+    height: 100px;
+    display: flex;
+}
+
+#logo{
+    position: relative;
+    width: 90px;
+    top: 6px;
+    padding-bottom: 5px;
 }
