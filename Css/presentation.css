@@ -3,18 +3,22 @@ body2
 {
     display: flex;
     flex-direction : column
+    
 }
+
 .intro1
 {
     font-size: 17px;
+    border-radius: 20px;
     font-family: Arial;
     font-style: oblique;
     text-align: center;
     max-width: 700px;
     margin: auto;
-    border:5px green ridge;
+    border:2px black ridge;
     padding-top : 1px;
     padding-bottom : 15px;
+    
     padding-left: 15px;
     padding-right : 15px;
     background-image: url("../View/image/fondvert.jpg");
@@ -23,9 +27,12 @@ body2
 .intro2
 {
     font-size: 27px;
-    font-family: Arial;
-    font-style: oblique;
+   
+    font-weight: bold;
     text-align: center;
+    font-family: 'Dancing Script', cursive;
+    
+    
 }
 
 img
@@ -35,21 +42,19 @@ img
 
 .Titre
 {
-    font-family: Arial;
-    font-style: oblique;
-    font-size: 35px;
-    text-align: center;
-    padding-bottom : 40px;
-    padding-left: 15px;
-    padding-right : 15px;
+    text-shadow: 2px 3px 5px rgba(0,0,0,0.3);
+    font-size: 60px;     
+    text-align: center ;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
 
 }
 
-.nav
-{
-    display : flex
-    flex-direction : column;
-    width: 20%;
+
+.col-2{
+    
+    background-image: url("../View/image/fondvert.jpg");
+
 }
 .col-2
 {
@@ -60,12 +65,65 @@ img
     margin-top: 150px;
 
 }
-#colonne2
-{
+#colonne2{
+    border-left:2px black ridge;
     background-image: url("../View/image/outil.png");
-    border-left:5px green ridge;
+
+
+
+ 
+    
+    
 }
 
 li{
     margin-bottom : 40px;
 }
+.bouton a {
+    display:block;
+    width:200px;
+    line-height:50px;
+    text-align:center;
+
+    background-image: linear-gradient(blue, black);
+    color:white;
+    margin-left: 10px;
+    text-decoration:none;
+    border-radius: 20px;
+    }
+    .bouton a:hover {
+        color:red;
+        background-color: black;
+    }
+.bouton2 a {
+    display:block;
+    width:200px;
+    line-height:30px;
+    text-align:center;
+
+    background-image: linear-gradient(blue, black);
+    color:white;
+    margin-left: 10px;
+    text-decoration:none;
+    border-radius: 20px;
+    }
+    .bouton2 a:hover {
+        color:red;
+        background-color: black;
+    }
+.bouton3 a {
+    display:block;
+    width:200px;
+    line-height:30px;
+    text-align:center;
+
+    background-image: linear-gradient(blue, black);
+    color:white;
+    margin-left: 10px;
+    text-decoration:none;
+    border-radius: 20px;
+    }
+    .bouton3 a:hover {
+        color:red;
+        background-color: black;
+    }
