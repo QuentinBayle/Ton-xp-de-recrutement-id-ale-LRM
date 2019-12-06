@@ -9,6 +9,8 @@ and open the template in the editor.
         <title>leroy merlin</title>
         <meta charset="utf-8">
         <link  rel="stylesheet" href="../Css/postuler.css" />
+        <a href="acceuil.html"><img class = "img1" src="image/logo.png" alt= " merlin "/></a>
+        <img class = "img2" src="image/GIF LEROY MERLIN.gif" alt= " merlin " />
         
     </head>
     <header>
@@ -30,22 +32,23 @@ and open the template in the editor.
 <body>
     <section class="ok">
             <p class="formulaire"> Formulaire de candidature :</p1>
-<br /><br />
+                <br /><br />
+
     <form id="myForm">
             <fieldset>
         <legend>Contact</legend>
         <br /><br />
 
-        <label for="nom">Nom <em>*</em></label>
+        <label for="nom">Nom: <em>*</em></label>
         <input id="nom" placeholder="Pierre Dupont" autofocus="" required=""><br>
       
         <span class="form_col"></span>
-        <p class="appel"> Vous désirez être contacté :</p>
-        <label><input name="news" type="checkbox" /> Par téléphone :  </label>
-        <input id=" telephone" type=" tel" placeholder=" 0xxxxxxxxx" pattern=" 06[0-9]{8}"><br>
+        <p class="appel"> Vous désirez être contacté par :</p>
+        <label><input name="news" type="checkbox" />Téléphone:  </label>
+        <input class="tel" id=" telephone" type=" tel" placeholder=" 0xxxxxxxxx" pattern=" 06[0-9]{8}"><br>
         
         <br /><br />
-        <label><input name="news" type="checkbox" /> Par mail : </label>
+        <label><input name="news" type="checkbox" /> Mail : </label>
         
       <input id="email" type="email" placeholder="prenom.nom@etud.fr" required="" pattern="[a-zA-Z]*.[a-zA-Z]*@polytechnique.edu"><br>
   
@@ -61,20 +64,20 @@ and open the template in the editor.
         <label><input name="sex" type="radio" value="F" />Femme</label>
         <br /><br />
 
-        <label for="age">Age<em>*</em></label>
+        <label for="age">Age:<em>*</em></label>
       
-      <input id="age" type="number" placeholder="xx" pattern="[0-9]{2}" required=""><br>
+      <input class="age" id="age" type="number" placeholder="xx" pattern="[0-9]{2}" required=""><br>
         <br /><br />
     </fieldset>
     <br /><br />
     <fieldset>
             <legend>Candidature</legend>
             
-       
+           
         
         <br /><br />
-
-        <label class="form_col" for="job">Poste convoité :</label>
+        
+        <label class="job" for="job">Poste :</label>
 
         <select name="job" id="poste">
         	<option value="none">Sélectionnez le poste que vous désirez </option>
@@ -88,7 +91,7 @@ and open the template in the editor.
         
         <br /><br />
 
-        <label class="form_col" for="stage">Stage convoité:</label>
+        <label class="form_col" for="stage">Stage :</label>
 
         <select name="job" id="poste">
         	<option value="none">Sélectionnez le stage que vous désirez </option>
@@ -97,6 +100,8 @@ and open the template in the editor.
             <option value="de"> Data engineer </option>
            
         </select>
+       
+
         
         <br /><br />
         <p class="qualités"> Pourquoi suis-je le meilleur ? :</p>
@@ -107,9 +112,10 @@ and open the template in the editor.
 
         
 
-        <span class="form_col"></span>
-        <input type="submit" value="M'inscrire" /> <input type="reset" value="Réinitialiser le formulaire" />
-
+        <br /><br />
+        <input class="bouton" type="submit" value="M'inscrire" /> 
+        <input type="reset" value="Réinitialiser le formulaire" />
+        
     </form>
 </section>
 </body>

@@ -10,11 +10,7 @@ ol{
 #id {
     float: right;
 }
-.img1{
-    float: left;
-    width: 300px;
-    height: 200px;
-}
+
 body{
     text-align: justify;
 }
@@ -22,10 +18,15 @@ body{
     width:780px; 
     margin:auto;
 }
+.img1{
+    float: left;
+    width: 300px;
+    height: 200px;
+}
 .img2{
     float: right;
-    width: 350px;
-    height: 200px;
+    width: 300px;
+    height: 175px;
 }
 .postuler{
     text-align: right;
@@ -34,4 +35,7 @@ body{
 .outils{
     width: 700px;
     height: 100px;
+}
+.accueil{
+    float : left;
 }
