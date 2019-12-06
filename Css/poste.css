@@ -8,10 +8,7 @@ body
 {
     background-image: url("../View/image/fondvert.jpg");
 }
-.tinderposte{
-    box-shadow: 6px 6px 0px black;
 
-}
 .btn-success div img {
     
     width: 200px;
@@ -32,7 +29,7 @@ body
     height: 150px;
     -webkit-filter: grayscale(0) blur(0px);
     filter: grayscale(0) blur(0px);
-    transition: transform 1000ms ease-out;
+    
     
   }
 .btn-danger:hover{
@@ -40,10 +37,7 @@ body
     height: 60px;
     border-radius: 50%; 
 }
-.btn-danger:active{
-    left: 100%;
-	margin-left: -60px;
-}
+
 .btn-danger{
     position: relative;
     left: 20vh;
@@ -52,7 +46,7 @@ position: relative;
 }
 .image-div {
     left :70vh;
-
+    align-content: center;
 position: relative;
 }
 .btn-success{
