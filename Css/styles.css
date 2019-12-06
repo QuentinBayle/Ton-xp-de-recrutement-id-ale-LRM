@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 #navigation{
     box-shadow: 6px 6px 8px #aaa;
     height: 100px;
@@ -113,9 +113,9 @@
     color:green;
     font-family: 'Lora', serif;
 
-
 }
 
+<<<<<<< HEAD
 #titre
 {
     color: black;
@@ -168,3 +168,5 @@ position: relative;
 .btn-success{
 position: relative;
 }
+=======
+>>>>>>> a307e34dec34f9ffcf9d9ef594a94bd9d762ffeb
