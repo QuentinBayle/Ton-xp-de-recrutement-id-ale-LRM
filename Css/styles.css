@@ -1,10 +1,18 @@
 
 .intro1
 {
-    color: greenyellow;
     font-size: 15px;
     font-family: Arial;
     font-style: oblique;
+    text-align: center;
+}
+
+.intro2
+{
+    font-size: 20px;
+    font-family: Arial;
+    font-style: oblique;
+    text-align: center;
 }
 
 img
@@ -14,7 +22,7 @@ img
 
 .Titre
 {
-    color: green;
     font-family: Arial;
     font-style: oblique;
+    text-align: center;
 }
