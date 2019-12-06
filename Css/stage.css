@@ -1,11 +1,12 @@
 h1 {
     font-size: 50px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Dancing Script', cursive;
     color: green;
     text-align: center;
 }
 h2{
     text-decoration: underline ;
+    
 }
 ol{
     list-style-type: disc;
