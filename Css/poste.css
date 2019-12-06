@@ -89,3 +89,14 @@
 
 #gallery { position: relative; }
 #pictures img { position: absolute; top: -15px; left: 75vh; }
+
+#titre{
+    margin-top:auto;
+    margin-top:auto;
+    margin-left:70vh;
+    font-size: 35px;
+    color:green;
+    font-family: 'Lora', serif;
+
+
+}
